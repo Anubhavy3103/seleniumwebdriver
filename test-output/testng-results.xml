@@ -1,33 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="3" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-20T00:29:18 IST" name="Default suite" finished-at="2025-06-20T00:29:26 IST" duration-ms="7929">
+  <suite started-at="2025-06-20T01:08:05 IST" name="Suite" finished-at="2025-06-20T01:08:29 IST" duration-ms="24304">
     <groups>
     </groups>
-    <test started-at="2025-06-20T00:29:18 IST" name="Default test" finished-at="2025-06-20T00:29:26 IST" duration-ms="7929">
+    <test started-at="2025-06-20T01:08:05 IST" name="chromeTest" finished-at="2025-06-20T01:08:13 IST" duration-ms="8456">
       <class name="TestNg.paramtestng">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:18 IST" name="setup" finished-at="2025-06-20T00:29:26 IST" duration-ms="7812" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNg.paramtestng@198b6731]" started-at="2025-06-20T01:08:05 IST" name="setup" finished-at="2025-06-20T01:08:13 IST" duration-ms="8278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testlogo()[pri:1, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:26 IST" name="testlogo" finished-at="2025-06-20T00:29:26 IST" duration-ms="24" status="PASS">
+        <test-method signature="testlogo()[pri:1, instance:TestNg.paramtestng@198b6731]" started-at="2025-06-20T01:08:13 IST" name="testlogo" finished-at="2025-06-20T01:08:13 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogo -->
-        <test-method signature="testtitle()[pri:2, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:26 IST" name="testtitle" finished-at="2025-06-20T00:29:26 IST" duration-ms="5" status="PASS">
+        <test-method signature="testtitle()[pri:2, instance:TestNg.paramtestng@198b6731]" started-at="2025-06-20T01:08:13 IST" name="testtitle" finished-at="2025-06-20T01:08:13 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testtitle -->
-        <test-method signature="testurl()[pri:3, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:26 IST" name="testurl" finished-at="2025-06-20T00:29:26 IST" duration-ms="6" status="PASS">
+        <test-method signature="testurl()[pri:3, instance:TestNg.paramtestng@198b6731]" started-at="2025-06-20T01:08:13 IST" name="testurl" finished-at="2025-06-20T01:08:13 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testurl -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:26 IST" name="teardown" finished-at="2025-06-20T00:29:26 IST" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNg.paramtestng@198b6731]" started-at="2025-06-20T01:08:13 IST" name="teardown" finished-at="2025-06-20T01:08:13 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestNg.paramtestng -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- chromeTest -->
+    <test started-at="2025-06-20T01:08:18 IST" name="safariTest" finished-at="2025-06-20T01:08:29 IST" duration-ms="10783">
+      <class name="TestNg.paramtestng">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNg.paramtestng@79d8407f]" started-at="2025-06-20T01:08:18 IST" name="setup" finished-at="2025-06-20T01:08:29 IST" duration-ms="10762" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Sachins-MacBook-Air.local', ip: '2401:4900:1c64:5138:f5c1:d568:4c79:dd70%en0'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Sachins-MacBook-Air.local', ip: '2401:4900:1c64:5138:f5c1:d568:4c79:dd70%en0'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at TestNg.paramtestng.setup(paramtestng.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testlogo()[pri:1, instance:TestNg.paramtestng@79d8407f]" started-at="2025-06-20T01:08:29 IST" name="testlogo" finished-at="2025-06-20T01:08:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Sachins-MacBook-Air.local', ip: '2401:4900:1c64:5138:f5c1:d568:4c79:dd70%en0'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Sachins-MacBook-Air.local', ip: '2401:4900:1c64:5138:f5c1:d568:4c79:dd70%en0'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at TestNg.paramtestng.setup(paramtestng.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogo -->
+        <test-method signature="testtitle()[pri:2, instance:TestNg.paramtestng@79d8407f]" started-at="2025-06-20T01:08:29 IST" name="testtitle" finished-at="2025-06-20T01:08:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Sachins-MacBook-Air.local', ip: '2401:4900:1c64:5138:f5c1:d568:4c79:dd70%en0'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Sachins-MacBook-Air.local', ip: '2401:4900:1c64:5138:f5c1:d568:4c79:dd70%en0'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at TestNg.paramtestng.setup(paramtestng.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtitle -->
+        <test-method signature="testurl()[pri:3, instance:TestNg.paramtestng@79d8407f]" started-at="2025-06-20T01:08:29 IST" name="testurl" finished-at="2025-06-20T01:08:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Sachins-MacBook-Air.local', ip: '2401:4900:1c64:5138:f5c1:d568:4c79:dd70%en0'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Sachins-MacBook-Air.local', ip: '2401:4900:1c64:5138:f5c1:d568:4c79:dd70%en0'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at TestNg.paramtestng.setup(paramtestng.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testurl -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNg.paramtestng@79d8407f]" started-at="2025-06-20T01:08:29 IST" name="teardown" finished-at="2025-06-20T01:08:29 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNg.paramtestng -->
+    </test> <!-- safariTest -->
+  </suite> <!-- Suite -->
 </testng-results>
