@@ -1,4 +1,4 @@
-package Day1;
+package Pratice;
 
 import java.io.FileInputStream;
 import java.io.IOException;
