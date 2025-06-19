@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class screenshot {
 
 	public static void main(String[] args) {
-		WebDriver driver = new ChromeDriver(); // T
+		WebDriver driver = new ChromeDriver(); 
 		
 		driver.get("https://flipkart.com");
 		
@@ -23,8 +23,6 @@ public class screenshot {
 		File targetfile = new File(System.getProperty("user.dir")+"/screenshot/homepage.png");
 		
 		sourcefile.renameTo(targetfile);
-		
-		
 		
 	}
 

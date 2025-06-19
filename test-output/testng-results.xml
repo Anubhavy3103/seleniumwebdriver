@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-20T00:29:18 IST" name="Default suite" finished-at="2025-06-20T00:29:26 IST" duration-ms="7929">
+    <groups>
+    </groups>
+    <test started-at="2025-06-20T00:29:18 IST" name="Default test" finished-at="2025-06-20T00:29:26 IST" duration-ms="7929">
+      <class name="TestNg.paramtestng">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:18 IST" name="setup" finished-at="2025-06-20T00:29:26 IST" duration-ms="7812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testlogo()[pri:1, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:26 IST" name="testlogo" finished-at="2025-06-20T00:29:26 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogo -->
+        <test-method signature="testtitle()[pri:2, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:26 IST" name="testtitle" finished-at="2025-06-20T00:29:26 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtitle -->
+        <test-method signature="testurl()[pri:3, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:26 IST" name="testurl" finished-at="2025-06-20T00:29:26 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testurl -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNg.paramtestng@62ddbd7e]" started-at="2025-06-20T00:29:26 IST" name="teardown" finished-at="2025-06-20T00:29:26 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNg.paramtestng -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
