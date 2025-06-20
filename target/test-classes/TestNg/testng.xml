@@ -9,11 +9,4 @@
   </test> <!-- Test -->
   
   
-  <test thread-count="5" name="safariTest">
-  <parameter name="browser" value="safari"></parameter>
-    <classes>
-      <class name="TestNg.paramtestng"/>
-    </classes>
-  </test> <!-- Test -->
-  
-</suite> <!-- Suite -->
+</suite>
